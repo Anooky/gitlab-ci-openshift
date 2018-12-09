@@ -9,5 +9,6 @@ RUN yum install -y \
  ca-certificates \
  git \
  curl \
+ which \
  && yum clean all
 RUN curl -L https://github.com/openshift/origin/releases/download/$OC_VERSION/$OC_RELEASE.tar.gz | tar -C /usr/local/bin -xzf - --strip-components=1
